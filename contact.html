@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ISS | Contact</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Don't Contact us on iss.hexyweb.com thanks.">
+  <meta name="Vetle Tessem" content="The ISS">
+  <link rel="stylesheet" href="assets/css/master.css">
+
+</head>
+
+<body>
+  <div class="nav-container">
+    <nav>
+      <div class="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="facts.html">facts</a>
+        <a class="current" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+  <div class="flex-container">
+    <div class="container-content-background-contact">
+      <div class="contact-form-container">
+        <h1 id="h1-contact">Contact Us</h1>
+
+      </div>
+      <div class="contact-form-container">
+        <form>
+          <label for="inputName">Name</label>
+          <input type="text" id="name" name="inputName" required pattern="[a-zA-Z0-9\s]+" title="Enter your name" placeholder="John Doe">
+
+          <label for="inputEmail">Email Address</label>
+          <input type="email" id="email" name="inputEmail" required title="Enter a valid email" placeholder="Example@Gmail.com">
+
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="inputSubject" required title="Enter Subject title" placeholder="Subject title">
+
+          <label for="inputMsg">Message</label>
+          <textarea id="message" name="inputMsg" required placeholder="what's on your mind?"></textarea>
+
+          <input type="submit" id="submit-btn" onclick='Javascript:checkEmail();' value="Submit" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="endmessagediv">
+<p class="lstmsg">Thanks for stopping by, have a great day and don't forget to keep looking up you might just see something.</p>
+  </div>
+  <footer>
+    <nav class="nav-footer">
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="facts.html">facts</a></li>
+        <li class="current"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-p">This site is a student project and holds no rights to the content on the site. Website made by Vetle
+      Tessem - student@ Noroff.no</p>
+  </footer>
+  <script src="assets/js/master.js"></script>
+</body>
+
+</html>

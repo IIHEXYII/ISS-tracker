@@ -1,0 +1,4 @@
+Sitemap: http://hexyweb.com/sitemap.xml
+User-agent: *
+Disallow:/cgi-bin/
+Disallow:/assets/

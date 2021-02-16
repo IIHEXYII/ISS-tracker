@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: rgb(37, 37, 37);
+    border: none;
+}
+
+a {
+    color: royalblue;
+}
+
+body {
+    background: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    margin: 0em;
+
+}
+
+p {
+    font-size: 1em;
+    margin: 1em;
+    max-width: 600px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    margin: 1em;
+}
+
+
+/* ---------------- Navigation -------------*/
+
+.nav-container {
+    width: 100%;
+    background: #31313a;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    max-width: 1720px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    transition: .3s all ease-in-out;
+}
+
+nav a:hover {
+    opacity: .7;
+    color: rgb(165, 165, 165);
+    ;
+}
+
+.nav-menu {
+    align-self: center;
+    padding: 1em 0em 1em 0em;
+}
+
+.nav-menu a {
+    padding: 10px 0;
+    margin: 0.5em;
+    font-size: 1em;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.name {
+    position: relative;
+    text-justify: 40%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0em 0em 1em 0em;
+
+}
+
+
+.nav-menu a.current {
+    color: #7A9CFF
+}
+
+@media only screen and (min-width: 650px) {
+    .nav-menu a {
+        font-size: 1.5em;
+    }
+}
+
+/* ------------ FOOTER --------*/
+footer {
+    background: #31313a;
+
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav {
+    padding: 0;
+    list-style: none;
+    margin: 1.5em 0em 1em 0em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.footer-nav li {
+    margin: 0em 0.7em 0em 0.7em;
+
+}
+
+.footer-nav a {
+    font-size: 1em;
+}
+
+.footer-nav li.current a {
+    color: #7A9CFF
+}
+
+.footer-nav li.current a:hover {
+    color: #fff;
+}
+
+.footer-p {
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+/* --------------------- HOME ------------------ */
+.index-img {
+    max-width: 100%;
+    padding: 0.5em;
+    height: 300px;
+}
+
+.main-content-holder {
+    background: #fff;
+    max-width: 50em;
+    margin: 1em auto;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+#index-h2 {
+    text-align: center;
+    margin: 0em;
+    width: 100%;
+}
+
+#long-lati {
+    text-align: center;
+}
+
+/*--------- map --------*/
+#iss-location-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#mapofISS {
+    height: 420px;
+    width: 620px;
+}
+
+#checkMap {
+    text-align: center;
+    width: 100%;
+}
+
+#check-Tracker {
+    background: royalblue;
+    border-radius: 0.2em;
+    padding: 0.3em 1em 0em 1em;
+    color: #fff;
+    font-weight: normal;
+}
+
+/* --------------------- ABOUT ------------------ */
+
+.main-content-holder-about {
+    background: #fff;
+    max-width: 700px;
+    margin: 1em auto;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-bottom: 3em;
+    padding-top: 1em;
+}
+
+.about-img {
+    height: auto;
+    width: 90%;
+    border-radius: 4px;
+    margin: 0em 1em 0em 1em;
+}
+
+@media only screen and (min-width: 650px) {
+    .about-img {
+        width: 50%;
+    }
+
+    #image-1 {
+        float: right;
+        margin: 0.5em;
+    }
+
+    #image-2 {
+        float: right;
+        margin: 0.5em;
+        margin-bottom: 2em;
+    }
+
+
+}
+
+/* --------------------- FACTS ------------------ */
+.facts-list {
+    width: 100%;
+    margin: 1em 2em 0em 1em;
+}
+
+.facts-list li {
+    margin: 1em 0em 0em 2em;
+    list-style: disc
+}
+
+.facts-img {
+    width: 100%;
+}
+#h2-size-mass {
+    margin: 1em 0em 0em 2em
+}
+/* --------------------- CONTACT ------------------ */
+.form-title {
+    color: rgb(37, 37, 37);
+    font-size: 2.5em;
+    margin-left: 0px;
+    margin-left: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #585858;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: royalblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    background: rgb(61, 95, 199);
+    transition: ease-in-out;
+    transition: 0.3s;
+
+}
+
+
+.contact-form-container {
+    background-color: #fff;
+    margin: 0em auto;
+    padding: 1em 1em 3em 1em;
+    max-width: 50em;
+}
+
+label {
+    color: #252525;
+    font-weight: 700;
+}
+
+#name {
+    color: #252525;
+    background: #f5f5f5;
+    max-width: 500px;
+    display: block;
+}
+
+#email {
+    color: #252525;
+    background: #f5f5f5;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #585858;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    max-width: 500px;
+    display: block;
+
+}
+
+#subject {
+    color: #252525;
+    background: #f5f5f5;
+    max-width: 500px;
+    display: block;
+}
+
+#message {
+    color: #252525;
+    min-height: 10em;
+    background: #f5f5f5;
+    max-width: 500px;
+    display: block;
+}
+
+#h1-contact {
+    margin: 0.5em 0em 0em 0em;
+}
+#endmessagediv {
+    height: 10em;
+    background-color: #fff;
+    margin: 0em auto;
+    padding: 1em 1em 3em 1em;
+    max-width: 50em;   
+}
+.lstmsg {
+    margin: auto;
+    max-width: 460px;
+}
+@media only screen and (min-width: 650px) {
+    form {
+        margin: 0em 10em;
+    }
+
+    #h1-contact {
+        margin: 1em 0em 0em 5em;
+    }
+}

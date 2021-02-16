@@ -1,0 +1,72 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ISS | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A micro site with a dynamic map of the current location of the International Space Station">
+  <meta name="Vetle Tessem" content="The ISS">
+  <link rel="stylesheet" href="assets/css/master.css">
+  <!--Leaflet map settings-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+</head>
+
+<body>
+  <div class="nav-container">
+    <nav>
+      <div class="nav-menu">
+        <a class="current" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="facts.html">facts</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="main-content-holder">
+    <img class="index-img" src="./assets/media/iss063-s-001_0.png" alt="ISS official logo">
+    <h1 id="index-h1"> The International Space Station </h1>
+    <p>The International Space Station (ISS) is a modular space station (habitable artificial satellite) in low Earth
+      orbit. The ISS programme is a multi-national collaborative project between five participating space agencies: NASA
+      (United States), Roscosmos (Russia), JAXA (Japan), ESA (Europe), and CSA (Canada). The ownership and use of the
+      space station is established by intergovernmental treaties and agreements.</p>
+    <h2 id="index-h2">The ISS Current Location</h2>
+
+    <p id="long-lati">
+      Coordinates <span id="long"></span>° N, <span id="lati"></span>° E
+    </p>
+
+    <form id="checkMap">
+      <input type="checkbox" name="checkisscenter" id="checkisscenter" onchange="centerIss()" />
+      <label id="check-Tracker" for="checkisscenter">Press to center the ISS</label><br>
+    </form>
+    <div id="iss-location-cont">
+
+      <div id="mapofISS"></div>
+    </div>
+  </div>
+
+  <footer>
+    <nav class="nav-footer">
+      <ul class="footer-nav">
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="facts.html">facts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <p class="footer-p">This site is a student project and holds no rights to the content on the site. Website made by Vetle
+      Tessem - student@ Noroff.no</p>
+  </footer>
+  <script src="assets/js/master.js"></script>
+</body>
+
+</html>
